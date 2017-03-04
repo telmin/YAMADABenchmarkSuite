@@ -1,0 +1,4 @@
+[submodule "lu2"]
+	path = lu2
+	url = https://github.com/telmin/lu2
+	ignore = dirty
