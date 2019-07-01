@@ -12,7 +12,7 @@ all:$(TARGET) $(OBJS)
 .SUFFIXES: .cpp
 
 $(TARGET):$(OBJS)
-	$(CXX) $(LDFLAGS) -o $@ $(OBJS)
+	$(CXX) -o $@ $(OBJS)  $(LDFLAGS)
 
 .cpp.o:
 	$(CXX) $(CXXFLAGS) -c $<

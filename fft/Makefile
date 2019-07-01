@@ -1,10 +1,11 @@
 CXX = g++
-CXXFLAGS = -O3 -fomit-frame-pointer -fopenmp -mavx2 -march=core-avx2 -lfftw3 -lfftw3_threads -fopenmp -Wall
+CXXFLAGS = -O3 -fomit-frame-pointer -fopenmp -mavx2 -march=core-avx2 -Wall
+LDFLAGS = -lfftw3 -lfftw3_threads
 
 all: fftw
 
 fftw: fftw.cpp
-	$(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
 clean:
-	rm -f *.out *.o
+	rm -f *.out *.o fftw
