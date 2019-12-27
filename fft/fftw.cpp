@@ -39,9 +39,9 @@ void test3d(int nx, int ny, int nz) {
 
     printf("3-D FFT: %d x %d x %d\n", nx, ny, nz);
     double t = (t2 - t1) / 10.0;
-    printf("On-board: %f sec, %lf GFLOPS.\n", t, gflops / t);
+    printf("On-board: %f sec, %f GFLOPS.\n", t, gflops / t);
     t = (t3 - t2) / 10.0;
-    printf("On-board: %f sec, %lf GFLOPS.\n", t, gflops / t);
+    printf("On-board: %f sec, %f GFLOPS.\n", t, gflops / t);
 
     fftw_destroy_plan(pf);
     fftw_destroy_plan(pb);
