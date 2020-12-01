@@ -52,4 +52,5 @@ void test3d(int nx, int ny, int nz) {
 int main(int argc, char **argv) {
     test3d(128, 128, 128);
     test3d(256, 256, 256);
+    test3d(512, 512, 512);
 }
